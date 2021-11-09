@@ -1,2 +1,2 @@
 
-console.log('vueh5')
+console.log('vue mobile')
