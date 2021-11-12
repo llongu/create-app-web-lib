@@ -1,0 +1,63 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-size: 14px;
+  color: #666666;
+  background-color: #ffffff;
+}
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  background: #fff;
+  max-width: 1920px;
+  min-height: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+  padding-top: 72px;
+}
+#wrap {
+  max-width: 1190px;
+  min-width: 1190px;
+  text-align: center;
+  margin: 0 auto;
+}
+img {
+  object-fit: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+form,
+p,
+ul,
+input {
+  margin: 0px;
+  padding: 0px;
+}
+input,
+textarea {
+  font-family: inherit;
+  font-size: 14px;
+  color: #666666;
+}
+li {
+  padding: 0px;
+  margin: 0px;
+  line-height: 180%;
+  list-style-type: none;
+}
+:focus {
+  outline: 0;
+}
+
+button {
+  border: none;
+}
+
+$mainBg: #f5efd7;
