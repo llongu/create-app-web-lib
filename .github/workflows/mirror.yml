@@ -4,10 +4,7 @@ on:
   push:
     branches:
       - '*'
-  delete:
-    branches:
-    - '*'
-
+      
 jobs:
   mirror_to_gitee:
     runs-on: ubuntu-latest
