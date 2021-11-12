@@ -1,7 +1,7 @@
 <template>
   <div id="header">
     <div id="wrap">
-        header
+      header
     </div>
   </div>
 </template>
