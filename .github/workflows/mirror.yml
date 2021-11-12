@@ -1,6 +1,6 @@
 name: 'GitHub Actions Mirror'
 
-on:[push, pull_request]
+on: [push,pull_request]
 
 jobs:
   mirror_to_gitee:
