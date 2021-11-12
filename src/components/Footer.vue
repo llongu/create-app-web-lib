@@ -1,8 +1,6 @@
 <template>
   <div class="footer">
-    <div class="copyright">
-      Copyright © 2017- 2021
-    </div>
+      footer
   </div>
 </template>
 
