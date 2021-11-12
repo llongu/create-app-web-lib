@@ -8,6 +8,10 @@ jobs:
     steps:
       - name: 'Checkout'
         uses: actions/checkout@v1
+      - name: Extract branch name
+        shell: bash
+        run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+        id: extract_branch
       - name: 'Mirror to gitee'
         uses: pixta-dev/repository-mirroring-action@v1
         with:
@@ -15,4 +19,5 @@ jobs:
             git@gitee.com:llongu/create-app-web-lib.git
           ssh_private_key:
             ${{ secrets.GITEE_SYNC }}
+          branch: ${{ steps.extract_branch.outputs.branch }}
 
