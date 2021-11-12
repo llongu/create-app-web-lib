@@ -3,7 +3,7 @@ name: 'GitHub Actions Mirror'
 on:
   push:
     branches:
-      - '*'
+      - '**'
       
 jobs:
   mirror_to_gitee:
