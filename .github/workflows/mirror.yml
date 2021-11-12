@@ -1,9 +1,7 @@
 name: 'GitHub Actions Mirror'
 
-on:
-  push:
-    branches:
-      - '**'
+on:[push, pull_request]
+
 jobs:
   mirror_to_gitee:
     runs-on: ubuntu-latest
