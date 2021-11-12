@@ -2,16 +2,20 @@ name: 'GitHub Actions Mirror'
 
 on:
   push:
-    branches:    
-      - '*'         # matches every branch that doesn't contain a '/'
-      - '*/*'       # matches every branch containing a single '/'
-      - '**'        # matches every branch
+    branches:
+      - '**'
+    paths: 
+    - 'somepath/**'
 jobs:
   mirror_to_gitee:
     runs-on: ubuntu-latest
     steps:
       - name: 'Checkout'
         uses: actions/checkout@v1
+      - name: Extract branch name
+        shell: bash
+        run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+        id: extract_branch
       - name: 'Mirror to gitee'
         uses: pixta-dev/repository-mirroring-action@v1
         with:
@@ -19,5 +23,6 @@ jobs:
             git@gitee.com:llongu/create-app-web-lib.git
           ssh_private_key:
             ${{ secrets.GITEE_SYNC }}
+          branchs: ${{ steps.extract_branch.outputs.branch }}
     
 
