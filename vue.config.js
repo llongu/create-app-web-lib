@@ -11,6 +11,10 @@ module.exports = {
       return args
     })
   },
+  devServer: {
+    open: true,
+    host: 'localhost',
+  },
   pluginOptions: {
     "style-resources-loader": {
       preProcessor: "sass",
