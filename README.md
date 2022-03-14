@@ -11,19 +11,19 @@
 
 1. 安装 [mongoDB](https://www.mongodb.com/try/download/community)
 
-   运行 mongod.exe 
+   运行 `mongod.exe` 
 
-   项目db.js 配置 mongodb://127.0.0.1:27017 
+   项目 `db.js` 配置 `mongodb://127.0.0.1:27017` 
     
-   运行 mongDB Compass 连接 mongodb://127.0.0.1:27017 
+   运行 `mongDB Compass` 连接 `mongodb://127.0.0.1:27017` 
 
-   创建数据库 命名eggBase ,导入目录 eggBase 下 Collection
+   创建数据库 命名 **eggBase** ,导入目录 eggBase 下 Collection
 
 2. 安装 [redis](https://github.com/tporadowski/redis/releases)
 
-   运行 redis-server.exe 
+   运行 `redis-server.exe`
 
-   项目db.js 配置 redis 端口
+   项目 `db.js` 配置 redis 端口
 
 3. apiDoc 
 
@@ -217,3 +217,4 @@ async index() {
 
   访问接口文档自动生成或更新：`http://127.0.0.1:7002/api/updateApiDoc`
 
+  ![avatar](/apiDoc.png)
