@@ -1,0 +1,13 @@
+{
+    "name": "egg-cli-admin-server", 
+    "version": "1.0.0", 
+    "description": "egg-cli-admin-server项目API文档", 
+    "title": "egg-cli-admin-server API", 
+    "url" : "http://127.0.0.1:7002/api", 
+    "sampleUrl": "http://127.0.0.1:7002/api",
+    "forceLanguage":"zh-cn",
+    "template": {
+      "withCompare": true,
+      "withGenerator": true
+    }
+  }
