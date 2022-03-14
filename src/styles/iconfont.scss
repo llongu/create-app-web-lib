@@ -1,0 +1,82 @@
+@font-face {
+  font-family: 'iconfont';  /* Project id 2870370 */
+  src: url('//at.alicdn.com/t/font_2870370_a9nr9403v2w.woff2?t=1641541587859') format('woff2'),
+       url('//at.alicdn.com/t/font_2870370_a9nr9403v2w.woff?t=1641541587859') format('woff'),
+       url('//at.alicdn.com/t/font_2870370_a9nr9403v2w.ttf?t=1641541587859') format('truetype');
+}
+.el-iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+}
+
+.el-dashboard:before {
+  content: "\e7fe";
+}
+.el-charge::before {
+  content: "\e653";
+}
+.el-bx::before {
+  content: "\e654";
+}
+
+.el-kucun:before {
+  content: "\e61f";
+}
+
+.el-touSu:before {
+  content: "\e62e";
+}
+
+.el-puse:before {
+  content: "\e69d";
+}
+.el-reload:before {
+  content: "\e7b9";
+}
+.el-safe::before {
+  content: "\e649";
+}
+
+.icon-kehuguanhuai::before {
+  content: "\e7ad";
+}
+.icon-patrol::before {
+  content: "\e613";
+}
+.icon-finance::before {
+  content: "\e66c";
+}
+.icon-kpi::before {
+  content: "\e690";
+}
+.icon-data::before {
+  content: "\e61d";
+}
+.icon-repository::before {
+  content: "\e61a";
+}
+.icon-repertory::before {
+  content: "\e6e8";
+}
+.el-star::before {
+  content: "\e627";
+}
+.el-img::before {
+  content: "\e695";
+}
+.el-add::before {
+  content: "\e612";
+}
+.el-add2::before {
+  content: "\e632";
+}
+.el-setting::before{
+  content: "\e62c";
+}
+.el-username::before{
+  content: "\e688";
+}
+.el-pwd::before{
+  content: "\e67e";
+}

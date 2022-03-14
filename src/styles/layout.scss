@@ -1,0 +1,141 @@
+.full {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.fullWidth {
+  width: 100% !important;
+}
+
+.fullHeight {
+  height: 100% !important;
+}
+
+/* 间距样式 */
+@for $i from 0 to 100 {
+  // margin
+  .ml#{$i} {
+    margin-left: $i + px !important;
+  }
+
+  .mr#{$i} {
+    margin-right: $i + px !important;
+  }
+
+  .mt#{$i} {
+    margin-top: $i + px !important;
+  }
+
+  .mb#{$i} {
+    margin-bottom: $i + px !important;
+  }
+
+  .mh#{$i} {
+    margin-left: $i + px !important;
+    margin-right: $i + px !important;
+  }
+
+  .mv#{$i} {
+    margin-top: $i + px !important;
+    margin-bottom: $i + px !important;
+  }
+
+  // padding
+  .pl#{$i} {
+    padding-left: $i + px !important;
+  }
+
+  .pr#{$i} {
+    padding-right: $i + px !important;
+  }
+
+  .pt#{$i} {
+    padding-top: $i + px !important;
+  }
+
+  .pb#{$i} {
+    padding-bottom: $i + px !important;
+  }
+
+  .ph#{$i} {
+    padding-left: $i + px !important;
+    padding-right: $i + px !important;
+  }
+
+  .pv#{$i} {
+    padding-top: $i + px !important;
+    padding-bottom: $i + px !important;
+  }
+}
+
+// flex布局
+.df {
+  display: flex !important;
+}
+
+.df-fdc {
+  flex-direction: column;
+}
+
+.df-jcc {
+  justify-content: center;
+}
+
+.df-jcfe {
+  justify-content: flex-end;
+}
+
+.df-jcsb {
+  justify-content: space-between;
+}
+
+.df-jcsa {
+  justify-content: space-around;
+}
+
+.df-aic {
+  align-items: center;
+}
+
+.df-aife {
+  align-items: flex-end;
+}
+
+.df-aibl {
+  align-items: baseline;
+}
+
+.flex1 {
+  flex: 1;
+}
+
+.flexShrink0 {
+  flex-shrink: 0;
+}
+
+/* 文字超出省略号 */
+@for $i from 0 to 3 {
+  .toe#{$i} {
+    display: -webkit-box !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    word-break: break-all !important;
+    -webkit-line-clamp: $i !important;
+    -webkit-box-orient: vertical !important;
+  }
+}
+
+.scrollX {
+  overflow-x: auto;
+}
+
+.scrollY {
+  overflow-y: auto;
+}
+
+// 超链接
+.link-parimary {
+  color: #027fed;
+  text-decoration: underline;
+  cursor: pointer;
+}
